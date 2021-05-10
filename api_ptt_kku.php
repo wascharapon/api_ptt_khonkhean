@@ -27,9 +27,6 @@ curl_setopt_array($curl, array(
 )); //sProvinceCode เลือกจังหวัด
 
 $response = curl_exec($curl);
-$response = curl_exec($curl);
-$info = curl_getinfo($curl);
-
 $data =json_decode ($response,true);
 //$array = json_decode(json_encode($data), True);
 $data_kku=$data['d'][9];
